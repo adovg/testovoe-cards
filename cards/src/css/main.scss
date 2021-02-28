@@ -1,0 +1,83 @@
+@import 'reset.scss';
+@import 'media.scss';
+@import 'fonts';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1rem;
+  color: #000;
+}
+
+body {
+  //font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.container {
+  max-width: 100%;
+  min-width: 320px;
+}
+
+.wrap {
+  min-width: 320px;
+  max-width: 1366px;
+  padding: 0 1rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+}
+
+.form__wrap {
+  min-width: 320px;
+  max-width: 410px;
+  padding: 0 1rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0,0,0,0);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+}
+
+.header__list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+
+@import 'bloks/pictures.scss';
+@import 'bloks/form.scss';
+@import 'bloks/nav.scss';
+@import 'bloks/header.scss';
+@import 'bloks/search.scss';
+@import 'bloks/card.scss';

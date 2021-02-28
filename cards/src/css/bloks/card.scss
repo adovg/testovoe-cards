@@ -1,0 +1,128 @@
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 32px;
+}
+
+.card {
+    position: relative;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card__image {
+    max-height: 200px;
+    img {
+        max-width: 100%;
+        height: auto;
+        min-height: 136px;
+        object-fit: cover;
+    }
+}
+
+.card__avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 85px;
+    left: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    .card__avatar-img {
+        max-width: 56px;
+        max-height: 56px;
+    }
+    .cards__name {
+        margin-left: 12px;
+    }
+}
+
+.card__progressbar {
+    position: absolute;
+    background: #27ae60;
+    width: 46px;
+    height: 24px;
+}
+
+.card__progressbar-text {
+    position: absolute;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 2px;
+    color: #ffff;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.card__title {
+    margin-top: 24px;
+    margin-left: 20px;
+    margin-bottom: 13px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    line-height: 28px;
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+.lessons__resource {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    .lessons__resource-item {
+        margin: 15px;
+        flex-wrap: nowrap;
+        img {
+            max-width: 20px;
+            max-height: 14px;
+        }
+    }
+}
+
+.btn__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card__btn {
+    display: block;
+    background: #ffff;
+    color: #6e41e2;
+    font-size: 1rem;
+    line-height: 24px;
+    text-align: center;
+    padding: 30px 40px;
+    border: 1px solid #ffffff;
+    &:hover {
+        cursor: pointer;
+        border: 1px solid #6e41e2;
+        border-radius: 4px;
+        transition: all 0.7s;
+    }
+}
+
+@media (max-width: 725px) {
+    .cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-self: center;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+
+    .btn__row {
+        flex-direction: column;
+        width: 100%;
+    }
+}

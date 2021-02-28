@@ -1,0 +1,67 @@
+.search {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+    // padding-left: 12px;
+    input {
+        padding-left: 25px;
+        width: 96%;
+        height: 56px;
+        box-shadow: 0px 4px 16px 0px rgba(51, 51, 51, 0.08);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        background: url("../../img/cross.svg") no-repeat right center;
+    }
+}
+.search__line {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: #8d8d8d;
+    width: 100%;
+}
+
+.search__line::before {
+    position: absolute;
+    content: url("../../img/search.svg");
+    top: 17px;
+    box-shadow: 0px 4px 16px 0px rgba(51, 51, 51, 0.08);
+}
+
+select {
+    height: 56px;
+    background: #0000;
+    width: 100%;
+    box-shadow: 0px 4px 16px 0px rgba(51, 51, 51, 0.08);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: url("../../img/arrov-down.svg") no-repeat right center;
+}
+
+.select__countries {
+    position: relative;
+}
+
+.select__countries::before {
+    position: absolute;
+    content: "Your country";
+    color: #8d8d8d;
+    font-size: 0.8rem;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.select__countries::after {
+    position: absolute;
+    content: url("../../img/cross.svg");
+    right: 20px;
+    top: 22px;
+}
